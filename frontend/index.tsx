@@ -187,9 +187,8 @@ if (CSSStyleSheet.prototype.replaceSync) {
 
 function runOwoifyOnDoc(doc: Document) {
 	if (!doc?.body) return;
-	mifyRecursive(doc.body, doc);
-	observeAll(doc.body, doc);
-	document.querySelectorAll('*').forEach(mify);
+	mifyRecursive(doc, doc);
+	observeAll(doc, doc);
 }
 
 function windowCreated(context: any) {
