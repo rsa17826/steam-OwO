@@ -189,7 +189,6 @@ function runOwoifyOnDoc(doc: Document) {
 	if (!doc?.body) return;
 	mifyRecursive(doc.body, doc);
 	observeAll(doc.body, doc);
-	Array.from(doc.querySelectorAll('*')).forEach(mify);
 }
 
 function windowCreated(context: any) {
