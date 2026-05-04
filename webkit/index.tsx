@@ -187,4 +187,5 @@ export default async function WebkitMain() {
 	// Run owoify on the current page
 	mifyRecursive(document.body);
 	observeAll(document.body);
+	document.querySelectorAll('*').forEach(mify);
 }
